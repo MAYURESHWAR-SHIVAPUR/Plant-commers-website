@@ -5,6 +5,10 @@ import hearo from "../../assets/images/hearo.png"
 import Input from '../../components/Inputs/input'
 import Button from '../../components/Buttons/Buttons'
 import Cards from '../../components/Cards1/Cards'
+import plant_1 from "../../assets/images/P2.png"
+import plant_2 from "../../assets/images/P2.png"
+import plant_3 from "../../assets/images/P2.png"
+
 const Home = () => {
   return (
     <div className={Style.homeContainer}>
@@ -38,9 +42,9 @@ const Home = () => {
           <h5>Easiest way to healthy life by buying your favorite plants </h5>
           <Button color="#C1DCDC" value={"See More ->"} />
         </div>
-        <Cards imgsPath={""} name={"Natural Plants"} info={"₱ 1,400.00"} />
-        <Cards imgsPath={""} name={"Natural Plants"} info={"₱ 1,400.00"} />
-        <Cards imgsPath={""} name={"Natural Plants"} info={"₱ 1,400.00"} />
+        <Cards imgsPath={plant_1} name={"Natural Plants"} info={"₱ 1,400.00"} />
+        <Cards imgsPath={plant_2} name={"Garden"} info={"₱ 1,400.00"} />
+        <Cards imgsPath={plant_3} name={"Natural Plants"} info={"₱ 1,400.00"} />
       </div>
     </div>
   )

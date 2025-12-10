@@ -2,6 +2,7 @@ import React from 'react'
 import Style from "./Feedback.module.css"
 import Cards from "../../components/Reveiw_Card/Reveiw"
 import Rev_1 from "../../assets/images/Rev_1.png"
+import Rev_2 from "../../assets/images/Rev_2.png"
 import Footer from "../../components/Footer/Footer"
 import { MyContext } from "../../context/CreateContext"
 
@@ -14,10 +15,10 @@ const Feedback = () => {
       <h1> GREEMIND?</h1>
       <div className={Style.Feed_reviwes}>
         <Cards imgsPath={Rev_1} />
-        <Cards />
-        <Cards />
+        <Cards imgsPath={Rev_2} />
+        <Cards imgsPath={Rev_1} />
       </div>
-      <MyContext value={{value}}>
+      <MyContext value={{ value }}>
         <Footer />
       </MyContext>
     </div>
