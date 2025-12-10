@@ -1,0 +1,89 @@
+.homeContainer {
+    height: fit-content;
+    width: 100vw;
+    overflow: hidden;
+    background-color: var(--primary-color);
+}
+
+.homeContainer h1 {
+    font-family: "Aldrich";
+    font-size: 2rem;
+    color: black;
+}
+
+.homeContent {
+    height: 60vh;
+    width: 80vw;
+    margin: 5vh 5vw;
+    padding: 0 5vw;
+    background-color: var(--secondary-color);
+    border-radius: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.homeContainer .homeFirst {
+    width: 40%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.homeFirst h1 {
+    font-family: var(--Popins);
+    font-size: 3rem;
+    font-weight: bolder;
+    color: var(--black);
+    text-align: center;
+    width: 100%;
+    text-align: start;
+}
+
+.homeContent .homeFirst div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+    font-size: large;
+    transform: translate(-100px, -50px);
+}
+
+.homeContainer .homeSecond {
+    width: 60%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.homeContainer .homeSecond img {
+    height: 100%;
+    width: auto;
+    border-radius: 20px;
+}
+
+.homeFooter {
+    height: fit-content;
+    width: 70vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 5vh;
+    padding: 0 15vw;
+}
+
+.Hom_cards h3 {
+    font-size: 1.7rem;
+    width: 50%;
+    font-family: var(--Popins);
+    font-weight: bolder;
+}
+
+.Hom_cards h5 {
+    font-weight: 100;
+    font-family: 'Popins';
+    font-size: 0.7rem;
+    opacity: 0.5;
+    width: 35%;
+}

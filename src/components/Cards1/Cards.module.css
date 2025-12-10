@@ -1,0 +1,30 @@
+.cardContainer {
+    height: 275px;
+    width: 155px;
+}
+
+.cardContainer img {
+    border-radius: 15px;
+    background-color: black;
+    display: block;
+    height: 60%;
+    width: 100%;
+}
+
+.cardContainer h3 {
+    color: black;
+    font-family: var(--Popins);
+    font-weight: bolder;
+    font-size: 1.2rem;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.cardContainer h5 {
+    color: gray;
+    font-family: var(--Popins);
+    font-weight: 500;
+    font-size: 1rem;
+    margin-top: 5px;
+    text-align: center;
+}

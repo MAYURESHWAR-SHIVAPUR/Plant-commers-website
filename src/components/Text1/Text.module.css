@@ -1,0 +1,14 @@
+
+.AboutFirst h2,
+.AboutFirst p {
+    text-align: center;
+    opacity: 0.6;
+}
+
+.AboutFirst h2 {
+    opacity: 1;
+    text-align: center;
+    font-weight: bolder;
+    font-family: var(--Popins);
+}
+

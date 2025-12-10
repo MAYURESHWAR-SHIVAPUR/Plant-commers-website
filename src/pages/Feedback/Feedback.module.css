@@ -1,0 +1,25 @@
+.Feed_outer {
+    height: fit-content;
+    width: 100%;
+    padding-top: 5vh;
+    overflow: hidden;
+}
+
+.Feed_outer h1 {
+    margin-left: 5vh;
+    font-family: 'Popins';
+    font-weight: bolder;
+}
+
+.Feed_reviwes {
+
+    overflow-x: scroll;
+    overflow-y: hidden;
+    width: fit-content;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 5vw;
+    padding-left: 15vw;
+}

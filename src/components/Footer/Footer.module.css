@@ -1,0 +1,23 @@
+.Footer_outer{
+    height: 50vh;
+    width: 100%;
+    background-color: var(--secondary-color);
+    margin-top: 15vh;
+}
+
+.Foot_Upper{
+    height: 70%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.Foot_links,.Foot_Info{
+    height: 100%;
+    width: 25vw;
+}
+
+.Footer_outer p{
+    margin-left: 8vw;
+}

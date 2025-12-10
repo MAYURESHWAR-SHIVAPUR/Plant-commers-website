@@ -1,0 +1,17 @@
+.Cards4_outer {
+    height: fit-content;
+    width: 30%;
+    margin-top: 2.5vh;
+}
+
+.Cards4_outer h3 {
+    font-size: 1rem;
+    font-family: 'Popins';
+}
+
+.Cards4_outer h6 {
+    font-size: 0.8rem;
+    font-family: 'Popins';
+    font-weight: 100;
+    opacity: 0.6;
+}

@@ -1,0 +1,9 @@
+.Active{
+    opacity: 1;
+}
+.InActive{
+    opacity: 0.5;
+}
+*{
+     scrollbar-width: none;
+}

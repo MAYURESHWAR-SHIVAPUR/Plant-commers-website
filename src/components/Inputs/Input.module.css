@@ -1,0 +1,22 @@
+.Com_Input_1 {
+    width: 70%;
+    height: 55px;
+    border-radius: 20px;
+    border: none;
+    padding: 0 18px;
+    font-size: medium;
+    display: block;
+    margin: 0;
+}
+
+.Com_Button_2 {
+    width: 45px;
+    height: 45px;
+    border-radius: 18px;
+    border: none;
+    background-color: var(--secondary-color);
+    color: black;
+    font-size: medium;
+    cursor: pointer;
+    transform: translate(160px, -55px);
+}

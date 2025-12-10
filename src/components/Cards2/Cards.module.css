@@ -1,0 +1,21 @@
+.CardsOuter{
+    height: 25vh;
+    width: 20vw;
+
+}
+
+.CardsOuter img{
+    height: 150px;
+    border-radius: 10px;
+}
+
+.CardsOuter h2, .CardsOuter p{
+    text-align: center;
+    font-family: var(--Popins);
+}
+
+.CardsOuter p{
+    font-size: 0.8rem;
+    opacity: 0.6;
+    font-weight: lighter;
+}

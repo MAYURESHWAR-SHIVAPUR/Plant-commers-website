@@ -1,0 +1,14 @@
+.AboutOuter {
+    height: 50vh;
+    width: 100vw;
+    background-color: var(--primary-color);
+    padding: 8vh 0;
+    overflow-y: hidden;
+}
+
+.AboutSecond {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100vw;
+}
