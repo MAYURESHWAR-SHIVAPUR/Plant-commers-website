@@ -1,9 +1,10 @@
 .Active{
-    opacity: 1;
+    color: var(--text-color);
 }
 .InActive{
-    opacity: 0.5;
+    color: var(--muted-color) !important;
 }
 *{
      scrollbar-width: none;
+     font-family: var(--Popins);
 }

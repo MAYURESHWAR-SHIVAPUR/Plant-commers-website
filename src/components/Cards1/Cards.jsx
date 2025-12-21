@@ -1,5 +1,6 @@
 import React from 'react'
 import Style from "./Cards.module.css"
+import PropTypes from "prop-types"
 
 const Cards = ({imgsPath, name, info}) => {
   return (
@@ -9,6 +10,12 @@ const Cards = ({imgsPath, name, info}) => {
       <h5>{info}</h5>
     </div>
   )
+}
+
+Cards.protoType = {
+  imgsPath : PropTypes.string.isRequired,
+  name : PropTypes.string.isRequired,
+  info : PropTypes.string.isRequired,
 }
 
 export default Cards

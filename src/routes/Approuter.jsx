@@ -6,7 +6,6 @@ import Contact from "../pages/Contact/Contact";
 import NotFound from "../pages/NotFound/NotFound";
 
 
-
 const router = createBrowserRouter([
   {
     path: "/",

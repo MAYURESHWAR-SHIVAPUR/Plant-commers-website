@@ -1,8 +1,35 @@
 :root {
-    --primary-color: #FFFFFF;
-    --secondary-color: #C1DCDC;
-    --Aldrich: "Aldrich";
-    --Popins: "Popins";
-    --Jaro: "Jaro";
-    --black:"black";
+    /* Colors */
+    --primary-color: #FFFFFF; /* page background */
+    --secondary-color: #C1DCDC; /* light teal used across site */
+    --text-color: #000000; /* main text */
+    --muted-color: #878787; /* captions / helper text */
+    --border-color: rgba(0, 0, 0, 0.08);
+    --text-area-bg: #D9D9D9;
+    --button-bg: #1e1e1e7e;
+
+    /* Fonts */
+    --Aldrich: 'Aldrich';
+    --Popins: 'Popins';
+    --Jaro: 'Jaro';
+    --Ultra: 'Ultra';
+    --font-heading: var(--Aldrich);
+    --font-body: var(--Popins);
+    --font-accent: var(--Jaro);
+
+    /* Radii */
+    --radius-sm: 10px;
+    --radius-md: 15px;
+    --radius-lg: 35px;
+    --radius-pill: 2rem;
+
+    /* Spacing / Gutters */
+    --gutter: 5vw; /* horizontal spacing used in many containers */
+    --gutter-wide: 15vw; /* used for wider paddings */
+    --space-lg: 5vh; /* larger vertical spacing */
+    --space-md: 2.5vh; /* medium vertical spacing */
+
+    /* Buttons */
+    --btn-width: 120px;
+    --btn-height: 45px;
 }

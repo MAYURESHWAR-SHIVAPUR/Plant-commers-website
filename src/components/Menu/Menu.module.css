@@ -1,0 +1,26 @@
+.menu_OuterContainer{
+    height: 100vh;
+    width: 15vw;
+    background-color: var(--secondary-color);
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 100;
+    padding: 0 5vw;
+    border-top-left-radius:35px ;
+    border-bottom-left-radius:35px ;
+    display: block !important;
+}
+
+.menu_OuterContainer h1{
+    text-align: end;
+}
+
+.menu_OuterContainer a{
+    font-size: 1rem;
+    text-decoration: none;
+    color: var(--text-color);
+    display: block;
+    font-family: var(--Popins);
+    margin-top:5vh ;
+}

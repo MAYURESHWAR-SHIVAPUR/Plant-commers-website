@@ -1,0 +1,19 @@
+.Pro_Outer{
+    width: 100vw;
+    height: fit-content;
+    overflow-x: hidden;
+}
+
+.Pro_Header{
+    background-color: var(--secondary-color);
+    padding: 5vh 0;
+    display: grid;
+    place-items: center;
+}
+
+.Pro_Contaier{
+    padding: 5vh 5vw;
+    width: 90vw;
+    height: fit-content;
+    width: fit-content;
+}

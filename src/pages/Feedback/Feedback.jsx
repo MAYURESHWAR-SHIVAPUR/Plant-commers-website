@@ -1,13 +1,13 @@
 import React from 'react'
 import Style from "./Feedback.module.css"
-import Cards from "../../components/Reveiw_Card/Reveiw"
+import Cards from "../../components/Review_Card/Review"
 import Rev_1 from "../../assets/images/Rev_1.png"
 import Rev_2 from "../../assets/images/Rev_2.png"
 import Footer from "../../components/Footer/Footer"
 import { MyContext } from "../../context/CreateContext"
-
+import { Data } from '../../context/Data'
 const Feedback = () => {
-  const value = [["Information", "About", "Product", "Blog"], ["Company", "Community", "Career", "Our Story"], ["Contact", "Getting Started", "Pricing", "Resources"]];
+  const value = Data;
 
   return (
     <div className={Style.Feed_outer}>

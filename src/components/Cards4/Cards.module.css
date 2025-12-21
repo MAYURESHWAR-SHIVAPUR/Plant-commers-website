@@ -6,12 +6,12 @@
 
 .Cards4_outer h3 {
     font-size: 1rem;
-    font-family: 'Popins';
+    font-family: var(--Popins);
 }
 
 .Cards4_outer h6 {
     font-size: 0.8rem;
-    font-family: 'Popins';
+    font-family: var(--Popins);
     font-weight: 100;
-    opacity: 0.6;
+    color: var(--muted-color);
 }

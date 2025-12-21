@@ -16,6 +16,6 @@
 
 .CardsOuter p{
     font-size: 0.8rem;
-    opacity: 0.6;
+    color: var(--muted-color);
     font-weight: lighter;
 }

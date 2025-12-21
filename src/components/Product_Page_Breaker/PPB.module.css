@@ -1,0 +1,42 @@
+.PPB_Outer {
+    height: fit-content;
+    width: 100vw;
+    background-color: var(--secondary-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 8vh 0;
+}
+
+.PPB_first {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+
+}
+
+.PPB_first h1 {
+    font-size: 4rem;
+    font-family: var(--Ultra);
+    width: 100%;
+    font-weight: 100;
+}
+
+.PPB_second {
+    height: 100%;
+    display: grid;
+    place-items: center;
+
+}
+
+.PPB_second img {
+    min-height: 80%;
+    aspect-ratio: 1/1;
+    border-radius: 35px;
+}
+
+.PPB_second p {
+    color: var(--muted-color);
+}

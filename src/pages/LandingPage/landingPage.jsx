@@ -9,7 +9,7 @@ const landingPage = () => {
     <>
       <Home />
       <About />
-      < Category />
+      <Category />
       <Feedback />
     </>
   )

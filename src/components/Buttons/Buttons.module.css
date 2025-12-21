@@ -3,7 +3,7 @@
     height: 45px;
     border-radius: 15px;
     border: none;
-    color: black;
+    color: var(--text-color);
     font-size: 0.8rem;
     cursor: pointer;
 }

@@ -1,0 +1,16 @@
+.Contact_Outer{
+    height: fit-content;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.Contact_Outer .Contact_Inner{
+    margin-top: 10vh;
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 5vh 45vw;
+}

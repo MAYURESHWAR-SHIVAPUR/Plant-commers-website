@@ -1,12 +1,22 @@
+.Input_outer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    background-color: white;
+    border-radius: 20px;
+}
+
 .Com_Input_1 {
     width: 70%;
     height: 55px;
-    border-radius: 20px;
     border: none;
     padding: 0 18px;
     font-size: medium;
     display: block;
+    border-radius: 20px;
     margin: 0;
+    
 }
 
 .Com_Button_2 {
@@ -15,8 +25,9 @@
     border-radius: 18px;
     border: none;
     background-color: var(--secondary-color);
-    color: black;
+    color: var(--text-color);
     font-size: medium;
     cursor: pointer;
-    transform: translate(160px, -55px);
+    border:5px solid white;
+    /* transform: translate(160px, -65px); */
 }

@@ -7,7 +7,7 @@
 
 .Feed_outer h1 {
     margin-left: 5vh;
-    font-family: 'Popins';
+    font-family: var(--Popins);
     font-weight: bolder;
 }
 

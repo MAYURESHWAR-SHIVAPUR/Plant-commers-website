@@ -1,0 +1,41 @@
+.Loading_Outer {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--secondary-color);
+    z-index: 999;
+}
+
+.Loading_Outer h1 {
+    color: var(--text-color);
+    font-size: 4rem;
+    font-family: var(--Popins);
+    margin: 0 !important;
+}
+
+.Loading_Outer .loader_bar{
+    width: 50%;
+    height: 20px;
+    border: 2px solid var(--text-color);
+    border-radius: 15px;
+    position: relative;
+    overflow: hidden;
+}
+.loader_bar .load_value{
+    height: 100%;
+    background-color: var(--text-color);
+}
+.Loading_Outer Button {
+    width: fit-content;
+    padding: 1.5vh 4vw;
+    border-radius: 25px;
+    background-color: white;
+    font-size: 1.5rem;
+    border: none;
+    outline: none;
+}
+

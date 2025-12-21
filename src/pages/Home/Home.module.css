@@ -6,9 +6,9 @@
 }
 
 .homeContainer h1 {
-    font-family: "Aldrich";
+    font-family: var(--Aldrich);
     font-size: 2rem;
-    color: black;
+    color: var(--text-color);
 }
 
 .homeContent {
@@ -32,10 +32,10 @@
 }
 
 .homeFirst h1 {
-    font-family: var(--Popins);
+    font-family: var(--Ultra);
     font-size: 3rem;
-    font-weight: bolder;
-    color: var(--black);
+    font-weight: 100;
+    color: var(--text-color);
     text-align: center;
     width: 100%;
     text-align: start;
@@ -48,6 +48,11 @@
     width: 50%;
     font-size: large;
     transform: translate(-100px, -50px);
+}
+
+.homeContent .homeFirst action {
+    font-family: var(--Popins);
+    font-size: small;
 }
 
 .homeContainer .homeSecond {
@@ -82,8 +87,8 @@
 
 .Hom_cards h5 {
     font-weight: 100;
-    font-family: 'Popins';
+    font-family: var(--Popins);
     font-size: 0.7rem;
-    opacity: 0.5;
     width: 35%;
+    color: var(--muted-color);
 }

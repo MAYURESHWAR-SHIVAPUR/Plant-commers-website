@@ -8,13 +8,13 @@ const Footer = () => {
             <p>We help you find your dream plant</p>
             <div className={Style.Footer_1_links}>
                 <a href="">
-                    <i class="fa-brands fa-facebook-f"></i>
+                    <i className="fa-brands fa-facebook-f"></i>
                 </a>
                 <a href="">
-                    <i class="fa-brands fa-instagram"></i>
+                    <i className="fa-brands fa-instagram"></i>
                 </a>
                 <a href="">
-                    <i class="fa-brands fa-x-twitter"></i>
+                    <i className="fa-brands fa-x-twitter"></i>
                 </a>
             </div>
         </div>

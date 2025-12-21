@@ -23,12 +23,8 @@
 
 .Nav_outer div a {
     font-family: var(--Popins);
-    color: var(--black);
+    color: var(--text-color);
     text-decoration: none;
     font-weight: 600;
     transition: all 0.7s ease-in-out;
-
-    &:hover {
-        opacity: 1;
-    }
 }

@@ -15,3 +15,9 @@
   src: url('../fonts/Jaro-Regular-VariableFont_opsz.ttf') format('truetype');
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'Ultra';
+  src: url('../fonts/Ultra-Regular.ttf') format('truetype');
+  font-style: normal;
+}

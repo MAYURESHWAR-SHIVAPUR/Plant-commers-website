@@ -1,0 +1,17 @@
+.Pro_Outer {
+    padding: 0 10vw;
+    height: fit-content;
+    margin: 15vh 0;
+}
+
+.Pro_blocks {
+    margin-top: 5vh;
+    height: fit-content;
+    width: 80vw;
+    overflow-y: scroll;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 100px 50px;
+    flex-wrap: wrap;
+}
