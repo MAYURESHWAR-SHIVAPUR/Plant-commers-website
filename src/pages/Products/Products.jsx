@@ -2,7 +2,7 @@ import React from 'react'
 import Navbar from "../../components/Nav_Bar/Nav_Bar"
 import Style from "./Product.module.css"
 import { Data } from '../../context/Data.js'
-import Input from "../../components/Inputs/Input.jsx"
+import Input from "../../components/Inputs/input.jsx"
 import { useEffect, useState } from "react";
 import Product_Block from "../../components/Product_Block/Product_Block.jsx"
 import Footer from "../../components/Footer/Footer.jsx"
