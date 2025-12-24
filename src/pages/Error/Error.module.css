@@ -1,0 +1,30 @@
+.Error_outer {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    place-content: center;
+    overflow: hidden;
+}
+
+.Error_First {
+    width: 60vw;
+    height: 60vh;
+    background-color: var(--secondary-color);
+    display: grid;
+    place-items: center;
+    border-radius: 35px;
+}
+
+.Error_First h1 {
+    text-align: center;
+}
+
+.Error_First p {
+    color: var(--muted-color);
+}
+
+@media (max-width: 430px) {
+    .Error_First h1 {
+        font-size: 1rem;
+    }
+}

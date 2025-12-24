@@ -5,6 +5,9 @@ import Category from "../Categories/Categories"
 import Feedback from "../Feedback/Feedback";
 
 const landingPage = () => {
+  const width = window.innerWidth;
+  console.log(width);
+
   return (
     <>
       <Home />
