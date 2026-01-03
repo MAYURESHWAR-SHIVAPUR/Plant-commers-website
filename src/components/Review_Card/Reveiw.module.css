@@ -1,44 +1,95 @@
 .Rev_Outer {
     background-color: var(--secondary-color);
-    height: 42vh;
-    width: 50vw;
+    width: clamp(280px, 50vw, 600px); /* responsive width */
+    min-height: 30vh;
+    height: auto;
     border-radius: 25px;
     padding: 30px;
+    box-sizing: border-box;
+    transition: all 200ms ease;
 }
-
 
 .Rev_Outer p {
-    font-size: 1.2rem;
+    font-size: clamp(0.95rem, 1.2vw + 0.4rem, 1.2rem);
     font-family: var(--Popins);
     font-weight: 100;
+    margin: 0 0 0.5rem 0;
 }
 
-
 .Rev_innerCass {
-    height: 67%;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 1rem;
 }
 
 .Rev_innerCass img {
-    height: 100%;
+    width: 40%;
+    height: auto;
+    max-height: 18vh;
+    object-fit: cover;
+    border-radius: 12px;
+    flex: 0 0 auto;
 }
 
 .Rev_innerCass div {
-    width: 55vw;
+    flex: 1 1 auto;
+    min-width: 0; /* allow text to truncate if needed */
 }
 
 .Rev_innerCass div h2 {
-    margin: 0;
+    margin: 0 0 0.3rem 0;
+    font-size: clamp(1rem, 1.4vw + 0.6rem, 1.4rem);
 }
 
 .Rev_innerCass div h4 {
     margin: 0;
     color: var(--muted-color);
+    font-size: clamp(0.9rem, 1vw + 0.3rem, 1.1rem);
 }
 
 .Rev_innerCass h4 {
     font-size: 1.2rem;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+    .Rev_Outer {
+        width: clamp(260px, 70vw, 520px);
+        padding: 24px;
+        min-height: 28vh;
+    }
+
+}
+
+/* Mobile: stack image above content for better readability */
+@media (max-width: 480px) {
+    .Rev_Outer {
+        width: min(92vw, 420px);
+        padding: 18px;
+        border-radius: 18px;
+        min-height: auto;
+    }
+    .Rev_innerCass {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 0.75rem;
+    }
+    .Rev_innerCass img {
+        width: 80%;
+        max-height: none;
+        height: auto;
+        margin-bottom: 0.5rem;
+    }
+    .Rev_innerCass div {
+        width: 100%;
+    }
+    .Rev_innerCass div h2 {
+        font-size: 1.1rem;
+    }
+    .Rev_Outer p {
+        font-size: 0.95rem;
+    }
 }

@@ -1,33 +1,36 @@
-.Input_outer{
+.Input_outer {
     display: flex;
     align-items: center;
     justify-content: center;
     width: fit-content;
     background-color: white;
-    border-radius: 20px;
+    border-radius: var(--radius-md);
 }
 
 .Com_Input_1 {
     width: 70%;
     height: 55px;
     border: none;
-    padding: 0 18px;
-    font-size: medium;
+    padding: 0 1rem;
+    font-size: clamp(0.95rem, 1.2vw, 1.05rem);
     display: block;
-    border-radius: 20px;
+    border-radius: var(--radius-md);
     margin: 0;
-    
+
+    &:focus {
+        border: none;
+        outline: none;
+    }
 }
 
 .Com_Button_2 {
-    width: 45px;
-    height: 45px;
+    min-width: 45px;
+    height: var(--btn-height);
     border-radius: 18px;
     border: none;
     background-color: var(--secondary-color);
     color: var(--text-color);
     font-size: medium;
     cursor: pointer;
-    border:5px solid white;
-    /* transform: translate(160px, -65px); */
+    border: 5px solid white;
 }

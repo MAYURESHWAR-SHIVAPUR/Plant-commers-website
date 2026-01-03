@@ -4,12 +4,12 @@ import Error from "./pages/Error/Error"
 
 const App = () => {
   const [isSmallScreen, setIsSmallScreen] = useState(
-    window.innerWidth < 1000
+    window.innerWidth < 500
   )
 
   useEffect(() => {
     const handleResize = () => {
-      setIsSmallScreen(window.innerWidth < 1000)
+      setIsSmallScreen(window.innerWidth < 500)
     }
 
     window.addEventListener('resize', handleResize)

@@ -1,17 +1,18 @@
 .Pro_Outer {
-    padding: 0 10vw;
+    padding: 0 var(--gutter);
     height: fit-content;
-    margin: 15vh 0;
+    margin: 12vh 0;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .Pro_blocks {
     margin-top: 5vh;
-    height: fit-content;
-    width: 80vw;
-    overflow-y: scroll;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    gap: 100px 50px;
-    flex-wrap: wrap;
-}
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(var(--card-min, 160px), 1fr));
+    gap: clamp(1rem, 2.5vw, 2.5rem);
+    align-items: start;
+    justify-items: center;
+} 

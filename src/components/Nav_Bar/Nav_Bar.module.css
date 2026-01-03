@@ -1,38 +1,111 @@
 .Nav_outer {
     height: 70px;
-    width: 100vw;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.Nav_outer div h1 {
-    font-family: var(--Aldrich);
-    font-weight: bold;
-    font-size: 2rem;
-}
-
-.Nav_outer div {
-    height: 100%;
-    width: 20vw;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* margin-left: 20vw; */
-    /* margin-left: 20vw; */
+    padding: 0 2rem;
+    gap: 1rem;
+    box-sizing: border-box;
 }
 
-.Nav_outer div a {
+.logo {
+    font-family: var(--Aldrich);
+    font-weight: bold;
+    font-size: 1.7rem;
+    margin: 0;
+}
+.Nav_Divs{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 65vw;
+    height: 100%;
+}
+
+.navLinks {
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
     font-family: var(--Popins);
+}
+
+.navLinks a {
     color: var(--text-color);
     text-decoration: none;
     font-weight: 600;
-    transition: all 0.7s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    &:hover{
+        transform: scale(1.05);
+    }
 }
 
+.actions {
+    display: flex;
+    align-items: center;
+    gap: 1.3rem;
+    width: fit-content;
+}
+
+.iconLink {
+    color: var(--text-color);
+    font-size: 1rem;
+}
+
+.separator {
+    font-weight: 800;
+    opacity: 0.6;
+    margin: 0 .4rem;
+}
+
+.hamburger {
+    background: transparent;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding: .4rem .6rem;
+}
+
+/* Tablet & below: collapse links, show hamburger */
 @media (max-width: 1024px) {
-    .Nav_outer div {
-        /* width: 24vw; */
+    .Nav_outer {
+        padding: 0 1rem;
+    }
+
+    .Nav_outer h1 {
+        font-size: 1rem;
+    }
+
+    .navLinks a ,.actions a {
         font-size: 0.8rem;
+    }
+
+    .hamburger {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .iconLink {
+        font-size: 1.1rem;
+    }
+    .spacer{
+        width: 5vw;
+    }
+}
+
+/* Small touch targets for mobile */
+@media (max-width: 480px) {
+    .Nav_outer {
+        height: 60px;
+        padding: 0 0.8rem;
+    }
+
+    .logo {
+        font-size: 1.2rem;
+    }
+
+    .iconLink {
+        font-size: 1rem;
     }
 }

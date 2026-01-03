@@ -12,14 +12,21 @@
 }
 
 .Feed_reviwes {
-
-    overflow-x: scroll;
+    /* allow horizontal scrolling */
+    overflow-x: auto;
     overflow-y: hidden;
-    width: fit-content;
+    width: 100%;
     height: 50vh;
     display: flex;
+    flex-wrap: nowrap; /* prevent items from wrapping to next line */
     align-items: center;
-    justify-content: space-evenly;
     gap: 5vw;
     padding-left: 15vw;
+    scroll-snap-type: x mandatory; /* optional: snap to items */
+    -webkit-overflow-scrolling: touch; /* smooth scrolling on mobile */
+}
+
+.Feed_reviwes > * {
+    flex: 0 0 auto; /* ensure children don't shrink and keep their width */
+    scroll-snap-align: center; /* optional: center each item when snapping */
 }

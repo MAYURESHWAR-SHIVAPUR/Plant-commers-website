@@ -1,6 +1,6 @@
 .homeContainer {
     height: fit-content;
-    width: 100vw;
+    width: 100%;
     overflow: hidden;
     background-color: var(--primary-color);
 }
@@ -12,83 +12,202 @@
 }
 
 .homeContent {
-    height: 60vh;
-    width: 80vw;
-    margin: 5vh 5vw;
-    padding: 0 5vw;
+    width: 90%;
+    max-width: 1200px;
+    margin: 4vh auto;
+    padding: 0 2rem;
     background-color: var(--secondary-color);
-    border-radius: 35px;
+    border-radius: 28px;
     display: flex;
     align-items: center;
-    justify-content: center;
-
+    justify-content: space-between;
+    gap: 1.5rem;
+    box-sizing: border-box;
 }
 
-.homeContainer .homeFirst {
-    width: 40%;
+.homeFirst {
+    width: 45%;
+    min-width: 260px;
     height: 100%;
     display: grid;
-    place-items: center;
+    place-items: start;
 }
 
 .homeFirst h1 {
     font-family: var(--Ultra);
-    font-size: 3rem;
+    font-size: 2.6rem;
     font-weight: 100;
     color: var(--text-color);
-    text-align: center;
-    width: 100%;
+    margin: 0 0 1rem;
     text-align: start;
 }
 
-.homeContent .homeFirst div {
+.homeContent .homeFirst .stats {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    width: 50%;
-    font-size: large;
-    transform: translate(-100px, -50px);
+    gap: 1rem;
+    width: 80%;
+    font-size: 0.95rem;
 }
 
 .homeContent .homeFirst action {
     font-family: var(--Popins);
-    font-size: small;
+    font-size: 0.9rem;
 }
 
-.homeContainer .homeSecond {
-    width: 60%;
+.homeSecond {
+    width: 50%;
     height: 100%;
     display: grid;
     place-items: center;
 }
 
-.homeContainer .homeSecond img {
-    height: 100%;
+.homeSecond img {
+    max-height: 100%;
     width: auto;
+    max-width: 100%;
     border-radius: 20px;
 }
 
 .homeFooter {
     height: fit-content;
-    width: 70vw;
+    width: 95%;
+    max-width: 1200px;
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    margin-top: 5vh;
-    padding: 0 15vw;
+    justify-content: space-between;
+    gap: 1rem;
+    margin: 4vh auto;
+    padding: 1rem 1.5rem;
+    box-sizing: border-box;
+}
+
+.homeFooter>* {
+    flex: 1 1 220px;
 }
 
 .Hom_cards h3 {
-    font-size: 1.7rem;
-    width: 50%;
+    font-size: 1.6rem;
     font-family: var(--Popins);
     font-weight: bolder;
+    margin: 0 0 0.5rem;
 }
 
 .Hom_cards h5 {
     font-weight: 100;
     font-family: var(--Popins);
-    font-size: 0.7rem;
-    width: 35%;
+    font-size: 0.9rem;
     color: var(--muted-color);
+    margin: 0 0 1rem;
+}
+
+.HOF_Info {
+    display: flex;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 65%;
+}
+
+.HomeF_Imp_Cards {
+    display: flex;
+    /* flex-wrap: wrap; */
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/* Tablet: stack hero and footer content vertically */
+@media (max-width: 1024px) {
+    /* .homeContent {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem;
+        height: auto;
+    } */
+
+    .homeFirst,
+    .homeSecond {
+        width: 50%;
+    }
+
+    .homeFirst h1 {
+        font-size: 2rem;
+        text-align: center;
+    }
+    .homeContent{
+        padding: 1.5rem 2rem;
+    }
+    .homeContent .homeFirst .stats {
+        width: 100%;
+        justify-content: center;
+        transform: none;
+    }
+
+    .homeSecond img {
+        width: 100%;
+        height: auto;
+    }
+
+    .homeFooter {
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    .homeFooter>* {
+        width: 100%;
+        max-width: 650px;
+    }
+
+    .Hom_cards h3,
+    .Hom_cards h5 {
+        text-align: center;
+    }
+
+    .HOF_Info {
+        display: flex;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .HomeF_Imp_Cards {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+
+    }
+}
+
+/* Mobile: further reduce sizes and spacing */
+@media (max-width: 480px) {
+    .homeContent {
+        padding: 1rem;
+        border-radius: 18px;
+        gap: .8rem;
+    }
+
+    .homeFirst h1 {
+        font-size: 1.6rem;
+    }
+
+    .homeContent .homeFirst .stats {
+        flex-direction: column;
+        gap: .4rem;
+    }
+
+    .homeSecond img {
+        width: 90%;
+    }
+
+    .Hom_cards h3 {
+        font-size: 1.2rem;
+    }
+
+    .Hom_cards h5 {
+        font-size: 0.85rem;
+        width: 100%;
+    }
 }

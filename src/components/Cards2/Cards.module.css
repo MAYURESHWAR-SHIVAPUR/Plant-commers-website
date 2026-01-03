@@ -1,12 +1,17 @@
 .CardsOuter{
-    height: 25vh;
-    width: 20vw;
-
+    width: 100%;
+    max-width: 360px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
 }
 
 .CardsOuter img{
-    height: 150px;
+    width: 90%;
+    height: auto;
     border-radius: 10px;
+    aspect-ratio: 16/9;
+    object-fit: cover;
 }
 
 .CardsOuter h2, .CardsOuter p{
@@ -15,7 +20,7 @@
 }
 
 .CardsOuter p{
-    font-size: 0.8rem;
+    font-size: clamp(0.8rem, 1vw, 1rem);
     color: var(--muted-color);
     font-weight: lighter;
-}
+} 

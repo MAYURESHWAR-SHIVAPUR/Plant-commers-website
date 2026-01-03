@@ -14,9 +14,9 @@ const Feedback = () => {
       <h1>What customers say about</h1>
       <h1> GREEMIND?</h1>
       <div className={Style.Feed_reviwes}>
-        <Cards imgsPath={Rev_1} />
-        <Cards imgsPath={Rev_2} />
-        <Cards imgsPath={Rev_1} />
+        <Cards name="Joe Douch" imgsPath={Rev_1} />
+        <Cards name="Alexia Richard" imgsPath={Rev_2} />
+        <Cards name="Joe Douch" imgsPath={Rev_1} />
       </div>
       <MyContext value={{ value }}>
         <Footer />

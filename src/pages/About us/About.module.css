@@ -1,14 +1,60 @@
 .AboutOuter {
-    height: 50vh;
-    width: 100vw;
+    width: 100%;
+    padding: 6vh 1rem;
     background-color: var(--primary-color);
-    padding: 8vh 0;
-    overflow-y: hidden;
+    box-sizing: border-box;
 }
 
+/* keep content centered and constrained */
 .AboutSecond {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    width: 100vw;
+    gap: 1.5rem;
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    flex-wrap: wrap; /* allow cards to wrap on smaller screens */
 }
+
+/* let each card take up available space but keep a sensible minimum */
+.AboutSecond > * {
+    flex: 1 1 320px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Tablet: make cards two-per-row-ish and reduce padding */
+@media (max-width: 1024px) {
+    .AboutOuter {
+        padding: 5vh 1rem;
+    }
+
+    .AboutSecond {
+        width: 95%;
+        gap: 1rem;
+    }
+
+    .AboutSecond > * {
+        flex: 1 1 45%;
+    }
+}
+
+/* Mobile: stack vertically and center content */
+@media (max-width: 600px) {
+    .AboutOuter {
+        padding: 4vh 0.8rem;
+    }
+
+    .AboutSecond {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .AboutSecond > * {
+        flex: 1 1 100%;
+        max-width: 420px;
+    }
+}
+

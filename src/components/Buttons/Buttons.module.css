@@ -1,9 +1,13 @@
 .Buttons_1 {
-    width: 120px;
-    height: 45px;
-    border-radius: 15px;
+    width: var(--btn-width);
+    height: var(--btn-height);
+    border-radius: var(--radius-md);
     border: none;
     color: var(--text-color);
-    font-size: 0.8rem;
+    font-size: clamp(0.8rem, 1.2vw, 1rem);
     cursor: pointer;
-}
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 0.6rem;
+} 

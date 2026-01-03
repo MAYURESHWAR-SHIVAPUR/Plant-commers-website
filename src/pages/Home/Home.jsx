@@ -12,11 +12,11 @@ const Home = () => {
 
   return (
     <div className={Style.homeContainer}>
-      <Nav_Bar/>
+      <Nav_Bar />
       < div className={Style.homeContent} >
         <div className={Style.homeFirst}>
           <h1>Buy Your Dream Plants</h1>
-          <div>
+          <div className={Style.HOF_Info}>
             <action>
               <h3>50+</h3>
               <p>Plant Species</p>
@@ -40,11 +40,13 @@ const Home = () => {
         <div className={Style.Hom_cards}>
           <h3>Best Selling Plants</h3>
           <h5>Easiest way to healthy life by buying your favorite plants </h5>
-          <Button is_Home={true}  color="#C1DCDC" value={"See More ->"} />
+          <Button is_Home={true} color="#C1DCDC" value={"See More ->"} />
         </div>
-        <Cards imgsPath={plant_1} name={"Natural Plants"} info={"₱ 1,400.00"} />
-        <Cards imgsPath={plant_2} name={"Garden"} info={"₱ 2,400.00"} />
-        <Cards imgsPath={plant_3} name={"Indoor Plants"} info={"₱ 10,000.00"} />
+        <div className={Style.HomeF_Imp_Cards}>
+          <Cards imgsPath={plant_1} name={"Natural Plants"} info={"₱ 1,400.00"} />
+          <Cards imgsPath={plant_2} name={"Garden"} info={"₱ 2,400.00"} />
+          <Cards imgsPath={plant_3} name={"Indoor Plants"} info={"₱ 10,000.00"} />
+        </div>
       </div>
     </div>
   )

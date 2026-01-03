@@ -1,22 +1,27 @@
 .cardContainer {
-    height: 275px;
-    width: 155px;
+    width: 100%;
+    max-width: 220px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
 }
 
 .cardContainer img {
-    border-radius: 15px;
+    border-radius: var(--radius-sm);
     background-color: var(--text-color);
     display: block;
-    height: 64%;
+    width: 100%;
+    height: auto;
     aspect-ratio: 7/9;
+    object-fit: cover;
 }
 
 .cardContainer h3 {
     color: var(--text-color);
     font-family: var(--Popins);
     font-weight: bolder;
-    font-size: 1rem;
-    margin-top: 10px;
+    font-size: clamp(0.95rem, 1.2vw, 1.15rem);
+    margin-top: 0.4rem;
     text-align: center;
 }
 
@@ -24,7 +29,7 @@
     color: var(--muted-color);
     font-family: var(--Popins);
     font-weight: 500;
-    font-size: 0.7rem;
-    margin-top: 5px;
+    font-size: clamp(0.7rem, 1vw, 0.85rem);
+    margin-top: 0.2rem;
     text-align: center;
-}
+} 
