@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import Style from "./Loading.module.css"
 import { useNavigation } from '../../context/Navigate_To_product'
+import Rive from '../../components/Rive_1/Rive'
 
 const Loading = () => {
     const [progress, setProgress] = useState(0)
@@ -21,22 +22,24 @@ const Loading = () => {
             })
         }, 300)
 
-        return () => clearInterval(interval)
+        // return () => clearInterval(interval)
     }, []);
 
     return (
         <div className={Style.Loading_Outer}>
-            <h1>Loading Plants</h1>
-            <div className={Style.loader_bar}>
-                <div
-                    className={Style.load_value}
-                    style={{ width: `${progress}%` }}
-                >
+            <Rive />
+            <div className={Style.Loading_two}>
+
+                <h1>Loading Plants</h1>
+                <div className={Style.loader_bar}>
+                    <div
+                        className={Style.load_value}
+                        style={{ width: `${progress}%` }}
+                    >
+                    </div>
                 </div>
+                <button onClick={nav}>Get Back to Home</button>
             </div>
-            <button onClick={nav}>Get Back to Home</button>
-
-
         </div>
     )
 }

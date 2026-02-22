@@ -1,0 +1,30 @@
+import React from 'react'
+import { useRive, useStateMachineInput } from "@rive-app/react-canvas";
+import Style from "../Rive_1/Rive.module.css";
+
+const Rive = () => {
+    const { rive, RiveComponent } = useRive({
+        src: "/404.riv",
+        stateMachines: "State Machine 1",
+        autoplay: true,
+    });
+
+    const hoverInput = useStateMachineInput(
+        rive,
+        "State Machine 1",
+        "isHover"
+    );
+
+    return (
+        <div
+            className={Style.rive}
+            onMouseEnter={() => hoverInput && (hoverInput.value = true)}
+            onMouseLeave={() => hoverInput && (hoverInput.value = false)}
+        >
+            <p className={Style.hoverme}>hover me!</p>
+            <RiveComponent />
+        </div>
+    )
+}
+
+export default Rive

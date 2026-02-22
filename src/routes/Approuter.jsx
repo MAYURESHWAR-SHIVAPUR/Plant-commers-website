@@ -4,7 +4,7 @@ import LandingPage from "../pages/LandingPage/landingPage";
 import Product from "../pages/Products/Products";
 import Contact from "../pages/Contact/Contact";
 import NotFound from "../pages/NotFound/NotFound";
-
+import Loading from "../pages/Loading/Loading";
 
 const router = createBrowserRouter([
   {
@@ -18,6 +18,9 @@ const router = createBrowserRouter([
   {
     path: "/Contact",
     element: <Contact />
+  },{
+    path: "/loading",
+    element: <Loading />
   },
   {
     path: "*",

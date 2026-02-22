@@ -6,8 +6,11 @@
     position: absolute;
     top: 0;
     left: 0;
-    background-color: var(--secondary-color);
+    background-color: #4e9e9d;
     z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .Loading_Outer h1 {
@@ -17,7 +20,7 @@
     margin: 0 !important;
 }
 
-.Loading_Outer .loader_bar{
+.Loading_Outer .loader_bar {
     width: 50%;
     height: 20px;
     border: 2px solid var(--text-color);
@@ -25,10 +28,12 @@
     position: relative;
     overflow: hidden;
 }
-.loader_bar .load_value{
+
+.loader_bar .load_value {
     height: 100%;
     background-color: var(--text-color);
 }
+
 .Loading_Outer Button {
     width: fit-content;
     padding: 1.5vh 4vw;
@@ -39,3 +44,10 @@
     outline: none;
 }
 
+.Loading_two {
+    width: 50vw;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    justify-content: start;
+}
