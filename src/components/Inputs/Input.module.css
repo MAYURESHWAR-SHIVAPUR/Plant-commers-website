@@ -5,6 +5,7 @@
     width: fit-content;
     background-color: white;
     border-radius: var(--radius-md);
+    margin-top: 2vh;
 }
 
 .Com_Input_1 {

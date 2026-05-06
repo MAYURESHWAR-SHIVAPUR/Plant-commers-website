@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import Approuter from './routes/Approuter'
 import Error from "./pages/Error/Error"
+import Butterfly from './components/RiveButterfly/Butterfly'
 
 const App = () => {
   const [isSmallScreen, setIsSmallScreen] = useState(
@@ -17,7 +18,11 @@ const App = () => {
     return () => window.removeEventListener('resize', handleResize)
   }, [])
 
-  return isSmallScreen ? <Error /> : <Approuter />
+  return isSmallScreen ? <Error /> :
+    <div>
+      <Butterfly />
+      <Approuter />
+    </div>
 }
 
 export default App

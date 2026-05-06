@@ -1,12 +1,17 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Style from './NotFound.module.css'
 import Buttons from "../../components/Buttons_2/Buttons"
 import PNF from "../../assets/icons/PNF.png"
 import Rive from "../../components/Rive_2/Rive"
+import { usePNFanimation } from '../../animations/PageNotFound'
 
 const NotFound = () => {
+  const { heading } = usePNFanimation()
+  useEffect(() => {
+    heading();
+  }, [])
   return (
-    <div className={Style.notFoundContainer}>
+    <div id='PNF' className={Style.notFoundContainer}>
       <h1 className={Style.title}>404 - Page Not Found</h1>
 
       <div className={Style.NFC_decorativeElement}>

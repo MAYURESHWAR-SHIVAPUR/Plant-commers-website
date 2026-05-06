@@ -11,7 +11,7 @@ const Buttons = ({ value }) => {
     return;
   }
   return (
-    <button onClick={nav} className={Style.Buttons_2}>{value}</button>
+    <button id='button' onClick={nav} className={Style.Buttons_2}>{value}</button>
   )
 }
 

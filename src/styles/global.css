@@ -1,3 +1,5 @@
+@import "tailwindcss";
+
 .Active{
     color: var(--text-color);
 }
@@ -7,4 +9,9 @@
 *{
      scrollbar-width: none;
      font-family: var(--Popins);
+}
+
+ul {
+  list-style: disc;
+  padding-left: 20px;
 }

@@ -5,7 +5,7 @@ import Sumit from "../Buttons_3/Buttons"
 
 const Contact = ({ name }) => {
     return (
-        <div className={Style.Contact_Outer}>
+        <div id='block' className={Style.Contact_Outer}>
             <Buttons value={name} />
             <textarea placeholder='Enter Your message Here' name="" id=""></textarea>
             <Sumit value="Submit" />

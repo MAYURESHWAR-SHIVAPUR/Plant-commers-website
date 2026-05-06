@@ -6,19 +6,28 @@ import P1 from "../../assets/images/P3.png"
 import P2 from "../../assets/images/P4.png"
 import P3 from "../../assets/images/P5.png"
 import Buttons from '../../components/Buttons/Buttons'
+import { useAboutAnimation } from '../../animations/About'
+import { useEffect } from 'react'
 
 const Categories = () => {
+
+  const { Category } = useAboutAnimation()
+
+  useEffect(() => {
+    Category();
+  }, [])
+
   return (
-    <div className={Style.Ca_Outer}>
+    <div id='cateCont' className={Style.Ca_Outer}>
       <Text headers="Categories" info="Find what you are looking for" />
-      <div className={Style.Ca_first}>
+      <div id='category' className={Style.Ca_first}>
         <Cards imgPath={P1} info="Natural Plants" />
         <Cards imgPath={P2} info="Plant Accessories" />
         <Cards imgPath={P3} info="Artificial Plants" />
       </div>
-      <action>
+      <action id="text" >
         <p>Horem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        <Buttons  is_Home={true} color="white" value="Explore ->" />
+        <Buttons is_Home={true} color="white" value="Explore ->" />
       </action>
     </div>
   )

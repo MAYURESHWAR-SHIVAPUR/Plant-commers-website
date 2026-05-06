@@ -5,7 +5,7 @@
     background-color: var(--primary-color);
 }
 
-.homeContainer h1 {
+.homeContainer .h1 {
     font-family: var(--Aldrich);
     font-size: 2rem;
     color: var(--text-color);
@@ -33,13 +33,22 @@
     place-items: start;
 }
 
-.homeFirst h1 {
+.homeFirst .h1 {
     font-family: var(--Ultra);
     font-size: 2.6rem;
     font-weight: 100;
     color: var(--text-color);
     margin: 0 0 1rem;
     text-align: start;
+    display: inline-block;
+
+}
+
+.word {
+    display: inline-flex;
+    /* keeps letters in a row, wraps as a whole word */
+    margin-right: 0.3em;
+    /* space between words */
 }
 
 .homeContent .homeFirst .stats {
@@ -135,9 +144,11 @@
         font-size: 2rem;
         text-align: center;
     }
-    .homeContent{
+
+    .homeContent {
         padding: 1.5rem 2rem;
     }
+
     .homeContent .homeFirst .stats {
         width: 100%;
         justify-content: center;

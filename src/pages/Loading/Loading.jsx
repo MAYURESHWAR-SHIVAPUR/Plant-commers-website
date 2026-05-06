@@ -22,7 +22,7 @@ const Loading = () => {
             })
         }, 300)
 
-        // return () => clearInterval(interval)
+        return () => clearInterval(interval)
     }, []);
 
     return (

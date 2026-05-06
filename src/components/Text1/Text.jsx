@@ -3,7 +3,7 @@ import Styles from './Text.module.css'
 
 const Text = ({headers, info}) => {
     return (
-        <div className={Styles.AboutFirst}>
+        <div id='text' className={Styles.AboutFirst}>
             <h2>{headers}</h2>
             <p>{info}</p>
         </div>

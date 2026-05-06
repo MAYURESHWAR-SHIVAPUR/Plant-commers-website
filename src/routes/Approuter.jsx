@@ -5,6 +5,13 @@ import Product from "../pages/Products/Products";
 import Contact from "../pages/Contact/Contact";
 import NotFound from "../pages/NotFound/NotFound";
 import Loading from "../pages/Loading/Loading";
+import Login from "../pages/Login/Login";
+import Register from "../pages/Register/Register";
+import Profile from "../pages/Profile/Profile";
+import Info from "../components/Info/Info";
+import Orders from "../components/Orders/Orders";
+import Address from "../components/Address/Address";
+import Settings from "../components/Settings/Settings";
 
 const router = createBrowserRouter([
   {
@@ -18,9 +25,41 @@ const router = createBrowserRouter([
   {
     path: "/Contact",
     element: <Contact />
-  },{
+  }, {
     path: "/loading",
     element: <Loading />
+  }, {
+    path: "/login",
+    element: <Login />
+  }, {
+    path: "/register",
+    element: <Register />
+
+  }, {
+    path: "/profile",
+    element: <Profile />,
+    children: [
+      {
+        index: true,
+        element: <Info />
+      },
+      {
+        path: "/profile/info",
+        element: <Info />
+      },
+      {
+        path: "/profile/orders",
+        element: <Orders />
+      },
+      {
+        path: "/profile/addresses",
+        element: <Address />
+      },
+      {
+        path: "/profile/settings",
+        element: <Settings />
+      }
+    ]
   },
   {
     path: "*",

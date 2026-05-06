@@ -4,7 +4,7 @@ import Style from "../Rive_1/Rive.module.css";
 
 const Rive = () => {
     const { rive, RiveComponent } = useRive({
-        src: "/404.riv",
+        src: "404.riv",
         stateMachines: "State Machine 1",
         autoplay: true,
     });
@@ -17,11 +17,12 @@ const Rive = () => {
 
     return (
         <div
+            id='rive'
             className={Style.rive}
             onMouseEnter={() => hoverInput && (hoverInput.value = true)}
             onMouseLeave={() => hoverInput && (hoverInput.value = false)}
         >
-            <p className={Style.hoverme}>hover me!</p>
+            <p id="absolute left-[100%]" className={Style.hoverme}>hover me!</p>
             <RiveComponent />
         </div>
     )

@@ -3,7 +3,7 @@ import Style from "./Reveiw.module.css"
 
 const Review = ({ imgsPath,name }) => {
     return (
-        <div className={Style.Rev_Outer}>
+        <div id='cards1' className={Style.Rev_Outer}>
             <p>Jorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
 
             <div className={Style.Rev_innerCass}>

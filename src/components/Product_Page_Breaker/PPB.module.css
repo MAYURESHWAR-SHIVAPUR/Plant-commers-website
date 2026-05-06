@@ -5,7 +5,7 @@
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    padding: 8vh 0;
+    padding: 5vh 0;
 }
 
 .PPB_first {
@@ -17,7 +17,7 @@
 
 }
 
-.PPB_first h1 {
+.PPB_first h1{
     font-size: 4rem;
     font-family: var(--Ultra);
     width: 100%;
@@ -28,6 +28,7 @@
     height: 100%;
     display: grid;
     place-items: center;
+    width: 60%;
 
 }
 

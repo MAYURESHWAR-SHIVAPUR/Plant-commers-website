@@ -12,9 +12,9 @@ const Input = ({ is_Home }) => {
     }
     
     return (
-        <div className={Style.Input_outer}>
+        <div id='input' className={Style.Input_outer}>
             <input type="text" className={Style.Com_Input_1} placeholder='Search for Plants' />
-            <button onClick={nav} className={Style.Com_Button_2}>
+            <button id='search' onClick={nav} className={Style.Com_Button_2}>
                 <i className="fa-solid fa-magnifying-glass"></i>
             </button>
         </div>
