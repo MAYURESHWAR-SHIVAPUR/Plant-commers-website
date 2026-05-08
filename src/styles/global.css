@@ -1,17 +1,38 @@
 @import "tailwindcss";
 
-.Active{
+.Active {
     color: var(--text-color);
 }
-.InActive{
+
+.InActive {
     color: var(--muted-color) !important;
 }
-*{
-     scrollbar-width: none;
-     font-family: var(--Popins);
+
+* {
+    scrollbar-width: none;
+    font-family: var(--Popins);
 }
 
 ul {
-  list-style: disc;
-  padding-left: 20px;
+    list-style: disc;
+    padding-left: 20px;
+}
+
+.Aldrich {
+    font-family: var(--Aldrich);
+}
+
+.Popins {
+    font-family: var(--Popins);
+}
+
+
+.Jaro {
+    font-family: var(--Jaro);
+}
+
+
+
+.Ultra {
+    font-family: var(--Ultra);
 }

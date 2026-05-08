@@ -75,7 +75,7 @@ Make sure you have the following installed:
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/your-username/plant-ecommerce.git
+   git clone https://github.com/MAYURESHWAR-SHIVAPUR/Plant-commers-website.git
    cd plant-ecommerce
    ```
 

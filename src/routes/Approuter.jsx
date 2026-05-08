@@ -12,6 +12,8 @@ import Info from "../components/Info/Info";
 import Orders from "../components/Orders/Orders";
 import Address from "../components/Address/Address";
 import Settings from "../components/Settings/Settings";
+import Cart from "../pages/Cart/Cart";
+import Nav from "../components/Nav_Bar/Nav_Bar";
 
 const router = createBrowserRouter([
   {
@@ -21,6 +23,14 @@ const router = createBrowserRouter([
   {
     path: "/products",
     element: <Product />
+  },
+  {
+    path: "/Cart",
+    element:
+      <div>
+        <Nav />
+        <Cart />
+      </div>
   },
   {
     path: "/Contact",
