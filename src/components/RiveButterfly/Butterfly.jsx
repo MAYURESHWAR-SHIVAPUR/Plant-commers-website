@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { memo, useEffect } from 'react'
 import Rive, { useRive } from '@rive-app/react-canvas';
 import { butterfly } from '../../animations/butterfly';
 
@@ -39,4 +39,4 @@ const Butterfly = () => {
     )
 }
 
-export default Butterfly
+export default memo(Butterfly)

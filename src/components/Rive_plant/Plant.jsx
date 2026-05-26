@@ -1,4 +1,5 @@
 import Rive, { useRive } from '@rive-app/react-canvas'
+import { memo } from 'react';
 
 const Plant = () => {
     const { RiveComponent } = useRive({
@@ -14,4 +15,5 @@ const Plant = () => {
     )
 }
 
-export default Plant
+export default memo(Plant)
+

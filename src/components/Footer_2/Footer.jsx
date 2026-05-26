@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { memo } from 'react'
 import Style from "./Footer.module.css"
 import Card from "../Cards4/Cards"
 import { useContext } from "react";
@@ -16,4 +16,4 @@ const Footer = () => {
   )
 }
 
-export default Footer
+export default memo(Footer)

@@ -6,7 +6,6 @@ gsap.registerPlugin(ScrollToPlugin, ScrollTrigger);
 
 // gsap/butterfly.js
 export const butterfly = ({ x, y }) => {
-    console.log(x, y)
     gsap.to("#butterfly", {
         left: x,
         top: y,

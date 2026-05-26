@@ -2,6 +2,7 @@ import React from 'react'
 import Style from "./Buttons.module.css"
 import PropTypes from "prop-types"
 import { useNavigation } from '../../context/Navigate_To_product'
+import { memo } from 'react'
 
 const Buttons = ({is_Home, value, color }) => {
     const { goProduct } = useNavigation();
@@ -23,4 +24,4 @@ Buttons.propTypes = {
     color: PropTypes.string.isRequired
 }
 
-export default Buttons
+export default memo(Buttons)

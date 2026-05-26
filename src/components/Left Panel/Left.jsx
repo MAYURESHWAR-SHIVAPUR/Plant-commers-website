@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { memo } from 'react'
 import Plant from '../Rive_plant/Plant'
 
 const Left = ({ value, link }) => {
@@ -16,4 +16,4 @@ const Left = ({ value, link }) => {
     )
 }
 
-export default Left
+export default memo(Left)

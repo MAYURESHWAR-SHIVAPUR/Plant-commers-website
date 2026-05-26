@@ -3,8 +3,12 @@ import Style from "./Nav_Bar.module.css"
 import { NavLink } from "react-router-dom"
 import Menu from '../Menu/Menu'
 import { fadeIn } from '../../animations/Nav'
+import { useSelector } from 'react-redux'
+
 
 const Nav_Bar = () => {
+
+    const { name } = useSelector((state) => state.user)
 
     const [showMenu, SetMenu] = useState(false);
 
@@ -12,13 +16,13 @@ const Nav_Bar = () => {
         SetMenu(pre => !pre);
     }
 
-    useEffect(()=>{
+    useEffect(() => {
         fadeIn()
-    },[])
+    }, [])
 
     return (
         <nav className={Style.Nav_outer} id='Nav'>
-            <h1 id='h1' className={Style.logo} onClick={()=>window.location.href='/'}>
+            <h1 id='h1' className={Style.logo} onClick={() => window.location.href = '/'}>
                 POTFOREST CO.
             </h1>
 
@@ -35,7 +39,8 @@ const Nav_Bar = () => {
                         <i className="fa-solid fa-cart-shopping"></i>
                     </NavLink>
                     <NavLink id='info' to="/profile/info" className={Style.iconLink}>
-                        <i className="fa-solid fa-user"></i>
+                        <i className="fa-solid fa-user mr-3"></i>
+                        {name}
                     </NavLink>
                     <span id='line' className={Style.separator}>|</span>
 

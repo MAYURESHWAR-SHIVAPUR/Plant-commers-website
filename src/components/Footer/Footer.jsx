@@ -3,6 +3,7 @@ import Style from "./Footer.module.css"
 import Footer_1 from "../Footer_1/Footer"
 import Footer_2 from "../Footer_2/Footer"
 import { useFeedbackAnimation } from '../../animations/Feedback'
+import { memo } from 'react'
 
 const Footer = () => {
   const { footer } = useFeedbackAnimation();
@@ -25,4 +26,4 @@ const Footer = () => {
   )
 }
 
-export default Footer
+export default memo(Footer)

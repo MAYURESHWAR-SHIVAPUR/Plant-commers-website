@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import { useRive, useStateMachineInput } from "@rive-app/react-canvas";
 import Style from "./Rive.module.css";
 
@@ -27,4 +27,4 @@ const Rive = () => {
   );
 };
 
-export default Rive;
+export default memo(Rive);

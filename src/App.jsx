@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import Approuter from './routes/Approuter'
+import Approuter from './routes'
 import Error from "./pages/Error/Error"
 import Butterfly from './components/RiveButterfly/Butterfly'
 

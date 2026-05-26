@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { memo } from 'react'
 import Style from "../../pages/Home/Home.module.css"
 
 const Title = ({ title }) => {
@@ -21,4 +21,4 @@ const Title = ({ title }) => {
     )
 }
 
-export default Title
+export default memo(Title)
